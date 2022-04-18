@@ -1,0 +1,312 @@
+nav li{
+	padding: 12px;
+	border:1px solid black;
+	border-radius: 40px;
+	background-color: blanchedalmond;
+	display: inline-block;
+	width: 80%;
+	top: 50%;
+	font-family: monospace;
+	text-transform: uppercase;
+}
+
+nav ul{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+nav{
+	background-color: #333;
+	overflow: hidden;
+}
+
+.intro{
+	/* The image used */
+	background-image: url('../images/cover.png');
+	background-color:  #707070;
+	/* Set a specific height */
+	min-height: 250px;
+  
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+
+.active{
+	background-color:rgb(226, 189, 95);
+	font-weight: bold;
+	border: 1px solid rgb(53, 53, 99);
+	border-radius: 40px;
+}
+
+a.skip{
+	padding: 10px;
+	font-family: monospace;
+	border-radius: 5px;
+	background-color: purple;
+	color: white;
+	transition: left 1s ease-out;
+	z-index: 1;
+	position: absolute;
+	left: -500px;
+}
+
+a.skip:focus{
+    position: absolute;
+    left: 0px;
+    top:20px;
+ 
+  }
+
+img{
+	margin: 10px;
+	border: 3px solid black;
+	width: 70%;
+	border-radius:3px;
+  }
+
+/* flip card area */
+.flip-card {
+	background-color: transparent;
+	width: 400px;
+	height: 300px;
+	perspective: 1000px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
+  
+  .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+  }
+
+  .flip-card:focus .flip-card-inner {
+	transform: rotateY(180deg);
+  }
+  
+  
+  .flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  }
+  
+  /* .flip-card-front {
+	background-color: #bbb;
+	color: black;
+  } */
+  
+  .flip-card-back {
+	background-color: rgb(130, 103, 33);
+	color: black;
+	transform: rotateY(180deg);
+  }
+
+#mooncakebaby{
+	  border:0;
+	  width: 10%;
+	  animation-name: movement;
+	  animation-duration: 15s;
+  }
+
+
+@keyframes movement{
+  0% {
+	transform: rotate(45deg);
+    width: 25px;
+  }
+  20% {
+	transform: rotate(0deg)
+	width: 50px;
+  } 
+}
+
+@media (prefers-reduced-motion) {
+	#mooncakebaby {
+	  animation-name: movement;
+	  animation-duration: 0s;
+	  transform: rotate(0deg)
+	}
+	.intro {
+		background-attachment: initial;
+	}
+  }
+/* .container{
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr; 
+row-gap: 30px;
+
+ } */
+
+ a:focus {
+	outline: 4px dashed darkorange;
+  }
+
+.pics {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+
+  .flex_img{
+	width: 23%;
+}
+
+.imgs{
+	display: grid;
+	grid-column: auto;
+	justify-items: center;
+}
+
+
+.horo{
+	grid-column: 1 /span 2;
+	width: 85%;
+}
+
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
+
+.centar {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+  }
+
+img:hover{
+	/* filter: grayscale(); */
+	box-shadow: indianred;
+}
+
+body{
+	background-color: rgb(41, 36, 36);
+	background-image: url(../images/bg_blackboard.jpg);
+	box-shadow: 2px 4px #c7e2c7;
+}
+
+h1{
+	font-size: 30px;
+	color:blanchedalmond;
+	font-family: 'Nunito', sans-serif;
+	margin: 50px;
+	text-align: center;
+	padding:15px;
+}
+
+p{
+	font-family: 'Nunito', sans-serif;
+	color:blanchedalmond;
+	margin:  20px 10%;
+	text-align: center;
+	padding:15px;
+	line-height: 1.8;
+	
+}
+
+#recipe{
+	border: 1px solid blanchedalmond;
+	padding:10%;
+}
+
+form {
+	border: 3px solid black;
+	background-color: blanchedalmond;
+	margin: 5%;
+	font-family: 'Nunito', sans-serif;
+}
+
+fieldset{
+	display: block;
+	margin: 3%;
+	margin-top: 5%;
+}
+legend{ 
+	font-size: 125%;
+	text-align: center;
+	margin-top: 20px;
+  }
+  
+  label{
+	display: inline-block;
+	margin-left: 10px;
+	margin-right:10px;
+	width:15%;
+  }
+
+  label#check_id{
+	  width: 70%
+  }
+
+  input {
+	width: 70%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+  }
+
+  input#check_id{
+	width:20%;
+  }
+
+  span{
+	margin-left:20%;
+	font-family: italic;
+	font-weight: bold;
+  }
+  
+  textarea{
+	width: 70%;
+	height: 20vh;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+  }
+  
+
+  input[type=submit] {
+
+	background-color: olive;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+
+  }
+  
+  input[type=submit]:hover {
+	opacity: 0.8;
+  }
+
+footer{
+	background:olive;
+}

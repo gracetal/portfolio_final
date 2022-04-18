@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+	<!-- You do not need to make any changes to this file, but
+	you should still review the tags to make sure that you
+	are familiar with them. -->
+
+<html lang="en">
+<!-- All of the meta data for the page belongs in the header tag -->
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link to the favicon image -->
+	<link rel="icon" href="images/favicon.png">
+	<!-- Link to the reset file -->
+	<link rel="stylesheet" href="css/html5reset.css">
+	<!-- Link to the stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5LF97ET138"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5LF97ET138');
+</script>
+
+<script src="https://kit.fontawesome.com/39d184cfc2.js" crossorigin="anonymous"></script>
+	<title>Tastes from home</title>
+</head>
+
+<a class = "skip" href="#main"> skip to main content </a>
+<!-- All of the visible code in the page belongs in the body tag -->
+
+<body>
+
+	<!-- Header is a sematic tag page that aids readability -->
+	<header>
+		<!-- Nav is a sematic tag page that aids accessibility -->
+		<nav>
+			<ul>
+				<!-- Since I am on the index file I added class = action to the link to index. -->
+				<li class="active"><a href = "index.html" ><i class="fa-solid fa-house"></i> Tastes from home</a></li>
+				<li><a href = "recipeapple.html">Apple crumb cake</a></li>
+				<li><a href = "recipemoon.html">Egg yolk moon cake</a></li>
+				<li><a href = "recipetaro.html">Taro Basque Cheesecake</a></li>
+			</ul>
+		</nav>
+
+		<div class = "intro">
+			<h1 > Tastes from home</h1>
+			 <p>Sneak peek of a few favorite recipes that are either traditional <br>or a fusion of the east and the west</p>
+		 </div>
+	</header>
+
+	<!-- Every page should have a main tag for accessibility -->
+	<main>
+		<p id="main">Tastes can take you back in time, back to places we miss, back to people we love, and back to somewhere deep in our hearts. Hey, I'm Grace. I am a Taiwanese student studying in the US. 
+			I really enjoy baking, so sometimes I challenge myself to 
+			make desserts that can remind me of the small Island I come from. </p>
+
+		<!-- Make sure your anchor tags have a link (href) and a clickable component -->
+		
+		<div class="flip-card">
+			<div class="flip-card-inner">
+			  <div class="flip-card-front">
+				<img id="main_pic" src = "images/foodiepic.jpg" alt="Grace eating cake" width="400" class="center"/>  
+				<!-- <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;"> -->
+			  </div>
+			  <div class="flip-card-back">
+				<h1>teehee</h1> 
+				<p>I just love munching away</p> 
+			  </div>
+			</div>
+		  </div>	
+
+		<p>This is a picture of me taste testing (and enjoying) a apple crumb cake I made. 
+			The recipe was from a Jewish baker, and lucky you, I have shared it on the next page as well. 
+			On this website, I'm sharing a few of my favorite recipies, and some snippets of myself - how these recipes are close to my heart. 
+		I believe food has the power to give us energy, not only physically, but also helps us feel comforted and peaceful!</p>
+		
+	</main>
+	<form
+	action="https://formspree.io/f/mjvlapry"
+	method="POST"
+  >
+	<form>
+
+		<img id="mooncakebaby" src = "images/favicon.png" alt="cartoon mooncake" width="200" class="center"/>
+		<fieldset>
+			
+		  <legend>Feel free to reach out!</legend>
+		  <label for="name_id"> Name</label>
+		  <i class="fa-solid fa-user"></i>
+		  <input type="text" name="user_name" id="name_id" placeholder="Enter Your Name">
+	  
+		  <label for="email_id"> Email</label>
+		  <i class="fa-solid fa-envelope"></i>
+		  <input type="email" name="user_email" placeholder="me@me.com"id="email_id">
+	  
+		  <label for="message_id"> Message</label>
+		  <i class="fa-solid fa-comment"></i>
+		  <textarea id="message_id"></textarea>
+
+		  <input type="checkbox" name="check" id="check_id"> 
+		  <label for="check_id" id="check_id">check if you like food</label>
+		  <input id="button" type="submit" value="Send" >
+		</fieldset>
+	   </form>
+	<!-- Footer is a sematic tag page that aids readability -->
+	<footer>
+		<p>I hope you are happy and well fed.</p>
+		<iframe src="https://giphy.com/embed/d2ItDZZumUI6Y" class="centar" width="480" height="273" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/eating-spongebob-squarepants-d2ItDZZumUI6Y">via GIPHY</a></p>
+		<p>Grace Lee &copy; 2022</p>
+	</footer>
+</body>
+</html>
