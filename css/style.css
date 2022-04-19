@@ -262,6 +262,10 @@ p{
 	padding:10%;
 	/* background:rgb(26, 25, 25); */	
 }
+#steps{
+	background-color: antiquewhite;
+	color:#333;
+}
 
 form {
 	border: 3px solid black;
@@ -324,7 +328,7 @@ legend{
 
   input[type=submit] {
 
-	background-color: olive;
+	background-color: rgb(78, 78, 3);
 	color: white;
 	padding: 14px 20px;
 	margin: 8px 0;
@@ -339,7 +343,7 @@ legend{
   }
 
 footer{
-	background:olive;
+	background:rgb(78, 78, 3);
 }
 
 @media screen and (max-width: 1023px) and (min-width: 750px){
@@ -350,6 +354,11 @@ footer{
 	p{
 		padding-left: 10%;
 		padding-right: 10%;
+	}
+
+	form{
+		margin-left: 15%;
+		margin-right: 15%;
 	}
 }
 
@@ -374,14 +383,21 @@ footer{
 	}
 	.recipe{
 		display: flex;
-    	flex-wrap: wrap;
+    	/* flex-wrap: wrap; */
     	justify-content: center;
 	}
 
-	#recipe{
+	#recipe, #steps{
 		border: 1px solid blanchedalmond;
-		/* padding:5%; */
-		margin: 20%;
+		padding:5%;
+		margin: 5%;
 		/* background:rgb(26, 25, 25); */	
+	}
+
+	
+
+	form{
+		margin-left: 23%;
+		margin-right: 23%;
 	}
   }
