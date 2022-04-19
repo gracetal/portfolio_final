@@ -7,8 +7,8 @@ nav li{
 	display: inline-block;
 	width: 80%;
 	top: 50%;
-	font-family: monospace;
-	text-transform: uppercase;
+	font-family: 'Nunito', sans-serif;
+	/* text-transform: uppercase; */
 }
 
 nav ul{
@@ -190,23 +190,26 @@ row-gap: 30px;
 	outline: 4px dashed darkorange;
   }
 
+ /* class of pictures */ 
 .pics {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
   }
 
+/* width of pictures */ 
 .flex_img{
 	width: 23%;
 }
 
+/* class of images */
 .imgs{
 	display: grid;
 	grid-column: auto;
 	justify-items: center;
 }
 
-
+/* class for horizontal pictures */
 .horo{
 	grid-column: 1 /span 2;
 	width: 85%;
@@ -239,9 +242,9 @@ body{
 }
 
 h1{
-	font-size: 30px;
+	font-size: 50px;
 	color:blanchedalmond;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Square Peg', cursive;
 	/* margin: 50px; */
 	text-align: center;
 	padding:50px;
@@ -342,11 +345,18 @@ legend{
 	opacity: 0.8;
   }
 
+  .decor{
+	margin: 0px;
+	border: 0;
+	width: 100%;
+	display:none;
+  }
+
 footer{
 	background:rgb(78, 78, 3);
 }
 
-@media screen and (max-width: 1023px) and (min-width: 750px){
+@media screen and (max-width: 1007px) and (min-width: 641px){
 	.large_flex{
 		width: 30%;
 	}
@@ -360,9 +370,13 @@ footer{
 		margin-left: 15%;
 		margin-right: 15%;
 	}
+
+	#lace1{
+		display:block;
+	}
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1008px){
 	.large_flex{
 		width: 30%;
 	}
@@ -383,21 +397,20 @@ footer{
 	}
 	.recipe{
 		display: flex;
-    	/* flex-wrap: wrap; */
     	justify-content: center;
 	}
 
 	#recipe, #steps{
-		border: 1px solid blanchedalmond;
 		padding:5%;
 		margin: 5%;
-		/* background:rgb(26, 25, 25); */	
 	}
-
 	
-
 	form{
 		margin-left: 23%;
 		margin-right: 23%;
+	}
+
+	#lace2{
+		display:block;
 	}
   }
